@@ -42,7 +42,7 @@ printf "\n"
 
 
 function start() {
-read -p $'\e[1;92mUsername account: \e[0m' user
+read -p $'\e[1;92mUsername account: _.gs.oficial__ \e[0m' user
 checkaccount=$(curl -L -s https://www.instagram.com/$user/ | grep -c "the page may have been removed")
 if [[ "$checkaccount" == 1 ]]; then
 printf "\e[1;91mInvalid Username! Try again\e[0m\n"
